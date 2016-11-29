@@ -5,9 +5,10 @@ require 'nokogiri'
 require 'scraped'
 require 'scraperwiki'
 
-require 'pry'
-require 'open-uri/cached'
-OpenURI::Cache.cache_path = '.cache'
+# require 'pry'
+# require 'open-uri/cached'
+# OpenURI::Cache.cache_path = '.cache'
+require 'scraped_page_archive/open-uri'
 
 class String
   def tidy
@@ -28,6 +29,7 @@ class ListPage < Scraped::HTML
   end
 end
 
+# TODO: migrate to Scraped
 def scrape_party(url, party)
   puts party.to_s
   noko = noko_for(url)
@@ -43,7 +45,7 @@ def scrape_party(url, party)
         source: img_node.css('a/@href').text,
       }
       %i(image source).each { |i| data[i] = URI.join(url, URI.escape(data[i])).to_s unless data[i].to_s.empty? }
-      puts data
+      # puts data
       ScraperWiki.save_sqlite([:name, :party], data)
     end
   end
