@@ -1,8 +1,9 @@
 #!/bin/env ruby
 # encoding: utf-8
 
-require 'scraperwiki'
 require 'nokogiri'
+require 'scraped'
+require 'scraperwiki'
 
 require 'pry'
 require 'open-uri/cached'
@@ -18,12 +19,12 @@ def noko_for(url)
   Nokogiri::HTML(open(url).read)
 end
 
-def scrape_list(url)
-  noko = noko_for(url)
-  noko.css('li.item-181 ul li a').each do |a|
-    party = a.text.tidy
-    next unless party.include? 'Bancada'
-    scrape_party(URI.join(url, a.attr('href')), party)
+class ListPage < Scraped::HTML
+  field :party_urls do
+    noko.css('li.item-181 ul li a').select { |a| a.text.include? 'Bancada' }.map do |a|
+      party = a.text.tidy
+      [ party, URI.join(url, a.attr('href')).to_s ]
+    end.to_h
   end
 end
 
@@ -42,9 +43,13 @@ def scrape_party(url, party)
         source: img_node.css('a/@href').text,
       }
       %i(image source).each { |i| data[i] = URI.join(url, URI.escape(data[i])).to_s unless data[i].to_s.empty? }
+      puts data
       ScraperWiki.save_sqlite([:name, :party], data)
     end
   end
 end
 
-scrape_list('http://congresonacional.hn/index.php/conozca-su-diputado/la-junta-directiva')
+list = 'http://congresonacional.hn/index.php/conozca-su-diputado/la-junta-directiva'
+ListPage.new(response: Scraped::Request.new(url: list).response).party_urls.each do |party, url|
+  scrape_party(url, party)
+end
