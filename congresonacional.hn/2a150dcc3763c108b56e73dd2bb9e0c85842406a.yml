@@ -1,0 +1,47 @@
+---
+request:
+  method: get
+  uri: http://congresonacional.hn/index.php/conozca-su-diputado/2014-02-21-20-03-52.html
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - "*/*"
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Connection:
+    - Keep-Alive
+    Date:
+    - Tue, 29 Nov 2016 15:29:32 GMT
+    Content-Type:
+    - text/html; charset=utf-8
+    Server:
+    - Apache/2.2.22 (Ubuntu)
+    X-Powered-By:
+    - PHP/5.3.10-1ubuntu3.7
+    Set-Cookie:
+    - 013e15741ee2d66e3f57aa098b07365d=8vqvc3i4j06n5nqev7qno2jaq0; path=/
+    X-Logged-In:
+    - 'False'
+    P3p:
+    - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+    Cache-Control:
+    - no-cache
+    Pragma:
+    - no-cache
+    Vary:
+    - Accept-Encoding
+    Content-Length:
+    - '56960'
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Tue, 29 Nov 2016 15:29:02 GMT
