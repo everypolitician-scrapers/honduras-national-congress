@@ -20,7 +20,7 @@ response:
     Connection:
     - Keep-Alive
     Date:
-    - Sat, 03 Dec 2016 16:44:56 GMT
+    - Sun, 04 Dec 2016 22:33:04 GMT
     Content-Type:
     - text/html; charset=utf-8
     Server:
@@ -28,7 +28,7 @@ response:
     X-Powered-By:
     - PHP/5.3.10-1ubuntu3.7
     Set-Cookie:
-    - 013e15741ee2d66e3f57aa098b07365d=0nrd40bul1qsu0ob8um9rc6iq3; path=/
+    - 013e15741ee2d66e3f57aa098b07365d=oomrff0k7biaam5srp7svg5ee1; path=/
     X-Logged-In:
     - 'False'
     P3p:
@@ -40,8 +40,8 @@ response:
     Vary:
     - Accept-Encoding
     Content-Length:
-    - '34164'
+    - '34162'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Sat, 03 Dec 2016 16:44:25 GMT
+recorded_at: Sun, 04 Dec 2016 22:32:33 GMT
