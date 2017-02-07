@@ -20,15 +20,13 @@ response:
     Connection:
     - Keep-Alive
     Date:
-    - Tue, 24 Jan 2017 15:22:38 GMT
+    - Tue, 07 Feb 2017 06:37:41 GMT
     Content-Type:
     - text/html; charset=utf-8
     Server:
-    - Apache/2.2.22 (Ubuntu)
-    X-Powered-By:
-    - PHP/5.3.10-1ubuntu3.7
+    - Apache/2.4.18 (Ubuntu)
     Set-Cookie:
-    - 013e15741ee2d66e3f57aa098b07365d=vjclgbsl6h1idndunatv09m0h6; path=/
+    - 013e15741ee2d66e3f57aa098b07365d=5qv2mpob5q4eq6b5qpg4bkhcg3; path=/
     X-Logged-In:
     - 'False'
     P3p:
@@ -40,8 +38,8 @@ response:
     Vary:
     - Accept-Encoding
     Content-Length:
-    - '33353'
+    - '33494'
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Tue, 24 Jan 2017 15:22:13 GMT
+recorded_at: Tue, 07 Feb 2017 06:37:18 GMT
