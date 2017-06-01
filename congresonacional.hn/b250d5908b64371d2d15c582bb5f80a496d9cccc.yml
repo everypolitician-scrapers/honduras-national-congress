@@ -17,18 +17,12 @@ response:
     code: 200
     message: OK
   headers:
-    Connection:
-    - Keep-Alive
-    Transfer-Encoding:
-    - chunked
     Date:
-    - Wed, 31 May 2017 13:33:35 GMT
-    Content-Type:
-    - text/html; charset=utf-8
+    - Thu, 01 Jun 2017 15:38:24 GMT
     Server:
     - Apache/2.4.18 (Ubuntu)
     Set-Cookie:
-    - 013e15741ee2d66e3f57aa098b07365d=oajfhapqlnipsr3pel57iubnv5; path=/
+    - 013e15741ee2d66e3f57aa098b07365d=d6qg5dsbldrth0jejd2l08qv87; path=/
     X-Logged-In:
     - 'False'
     P3p:
@@ -39,7 +33,11 @@ response:
     - no-cache
     Vary:
     - Accept-Encoding
+    Content-Length:
+    - '8549'
+    Content-Type:
+    - text/html; charset=utf-8
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 31 May 2017 13:33:23 GMT
+recorded_at: Thu, 01 Jun 2017 15:38:11 GMT
