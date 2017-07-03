@@ -18,11 +18,11 @@ response:
     message: OK
   headers:
     Date:
-    - Sun, 02 Jul 2017 12:34:21 GMT
+    - Mon, 03 Jul 2017 00:21:08 GMT
     Server:
     - Apache/2.4.18 (Ubuntu)
     Set-Cookie:
-    - 013e15741ee2d66e3f57aa098b07365d=fes8tnf2s4v6u1ktdk8bnqvt26; path=/
+    - 013e15741ee2d66e3f57aa098b07365d=sqdsg20pr7edn0i4ic65i801s7; path=/
     X-Logged-In:
     - 'False'
     P3p:
@@ -40,4 +40,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Sun, 02 Jul 2017 12:34:11 GMT
+recorded_at: Mon, 03 Jul 2017 00:20:58 GMT
