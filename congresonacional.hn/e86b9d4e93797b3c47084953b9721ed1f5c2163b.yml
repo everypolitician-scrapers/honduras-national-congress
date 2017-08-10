@@ -18,26 +18,18 @@ response:
     message: OK
   headers:
     Date:
-    - Wed, 09 Aug 2017 10:35:02 GMT
+    - Thu, 10 Aug 2017 10:44:29 GMT
     Server:
     - Apache/2.4.18 (Ubuntu)
     Set-Cookie:
-    - 013e15741ee2d66e3f57aa098b07365d=n01p6ok37tojt7udo6r9utuam1; path=/
-    X-Logged-In:
-    - 'False'
-    P3p:
-    - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
-    Cache-Control:
-    - no-cache
-    Pragma:
-    - no-cache
+    - 013e15741ee2d66e3f57aa098b07365d=65fvchkrk007rmcami0ueenu11; path=/
     Vary:
     - Accept-Encoding
     Content-Length:
-    - '10064'
+    - '188'
     Content-Type:
-    - text/html; charset=utf-8
+    - text/html; charset=UTF-8
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 09 Aug 2017 10:34:55 GMT
+recorded_at: Thu, 10 Aug 2017 10:44:22 GMT
